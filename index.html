@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.2/darkly/bootstrap.min.css" rel="stylesheet" integrity="sha384-RfekGV6fZXMN1XYz5oPc4N/0IDvTM1Nt6Xciam6v0Al+glvRJ2mhnsr2S6tH/qM8"
+    crossorigin="anonymous">
+  <title>Don's NASA API</title>
+</head>
+
+<body>
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Don's NASA APOD Interface</h2>
+        <form id="input" class="form-inline">
+          <label for="date">Select Date</label>
+          <input class="ml-2" type="date" name="date" />
+          <input class="btn-primary ml-2" type="submit" />
+        </form>
+      </div>
+      <div class="col-md-4">
+        <h5>Error Message:
+          <span id="error"></span>
+        </h5>
+      </div>
+    </div>
+  </header>
+  <main class="container-fluid">
+    <div class="row">
+      <div id="image-frame" class="col-md-12">
+
+      </div>
+
+    </div>
+  </main>
+
+  <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
